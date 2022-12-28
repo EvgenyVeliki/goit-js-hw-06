@@ -1,10 +1,16 @@
-const button = document.querySelector(".change-color")
-const span = document.querySelector('.color')
-const body = document.querySelector('body')
+const widget = document.querySelector('.widget')
+const button = widget.lastElementChild
+const span = widget.firstElementChild.children[0]
+const body = widget.parentElement
+
+
+
+
+
 
 button.addEventListener('click', onClickButton)
 
-function onClickButton (event) {
+function onClickButton () {
  const newColor = body.style.backgroundColor = getRandomHexColor()
   
  span.textContent = newColor

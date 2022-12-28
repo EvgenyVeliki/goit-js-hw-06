@@ -10,8 +10,7 @@ const ingredients = [
 
 
 const list = document.querySelector('#ingredients')
-// const li = document.createElement('li')
-//  const nameClass = li.classList.add('js-item')
+
 
 const arr = []
 

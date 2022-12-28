@@ -1,20 +1,20 @@
+const counter = document.querySelector('#counter')
+const negativeNumber = counter.firstElementChild
+const positiveNumber = counter.lastElementChild
+const renewNumber = counter.children[1]
 
-const negativeNumber = document.querySelector('button[data-action="decrement"]')
-const positiveNumber = document.querySelector('button[data-action="increment"]')
-const renewNumber = document.querySelector('#value')
 
 let counterValue = 0 
 
 
+
 const decrement = () => {
     counterValue -= 1
-
     renewNumber.textContent = counterValue
 }
 
 const increment = () => {
     counterValue += 1
-
     renewNumber.textContent = counterValue
 }
 

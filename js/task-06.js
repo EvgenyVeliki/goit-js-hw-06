@@ -11,7 +11,7 @@ input.addEventListener('blur', onBlurInput)
 
 
 
-function onBlurInput(event) { 
+function onBlurInput() { 
    
    if (input.value.length === dataLength) {
       input.classList.remove("invalid");
